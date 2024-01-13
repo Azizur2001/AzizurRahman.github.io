@@ -1,0 +1,79 @@
+body {
+  background-image: linear-gradient(to left, #42275a, #734b6d);
+  margin: 0; /* Removing default margin */
+  height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.welcome-message {
+  font-size: 4em; /* Big text */
+  color: #fff; /* White text */
+  text-shadow: 2px 2px 4px #000000; /* Text shadow for depth */
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Some space above and below */
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.welcome-message:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+

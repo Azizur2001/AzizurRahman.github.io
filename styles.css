@@ -1,0 +1,165 @@
+/* Base styles for the entire document */
+body {
+    background-image: linear-gradient(to left,#42275a, #734b6d);
+    font-family: 'Segoe UI', STHeiti, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Navigation Menu Styles */
+nav#mainMenu ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav#mainMenu li {
+    display: inline-block;
+    border-right: 1px solid #555;
+}
+
+nav#mainMenu li:last-child {
+    border-right: none;
+}
+
+nav#mainMenu a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+nav#mainMenu a:hover, nav#mainMenu a:focus {
+    background-color: #05a;
+    color: white;
+}
+
+/* Submenu Styles */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.submenu li {
+    display: block;
+    text-align: left;
+}
+
+.submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+}
+
+/* Display submenu on hover */
+nav#mainMenu li:hover .submenu {
+    display: block;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    height: 100vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Back Link Styles */
+a.back-link {
+    display: inline-block;
+    padding: 10px;
+    background-color: #05a;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a.back-link:hover {
+    background-color: #0089d0;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #05a;
+}
+
+/* Additional CSS for the Go Back Button */
+/* Additional CSS for the Go Back Button */
+.back-button {
+    display: block; /* Change to block to allow margin auto to work */
+    width: fit-content; /* Set the width to fit the content */
+    padding: 10px 20px;
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    background-color: #3498db; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold; /* Make the text bold */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+    text-align: center; /* Ensure text is centered if the block becomes wider */
+}
+
+.back-button:hover {
+    background-color: #2980b9; /* Darker shade for hover effect */
+    color: #fff; /* Keep text color white on hover */
+    text-decoration: none; /* No underline on hover */
+}
+

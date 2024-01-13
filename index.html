@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Technology Course</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="navbar">
+    <a href="#home">Home</a>
+    <div class="subnav">
+        <button class="subnavbtn">Courses<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="https://gaia.cs.umass.edu/kurose_ross/index.php">Kurose and Ross</a>
+            <a href="http://w3schools.com">W3Schools</a>
+            <a href="https://www.geeksforgeeks.org/web-development/">GeeksforGeeks</a>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">About<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Browser<i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="#" onclick="showNavigatorInfo()">Navigator</a>
+            <a href="#" onclick="showWindowInfo()">Window</a>
+            <a href="#" onclick="showScreenInfo()">Screen</a>
+            <a href="#" onclick="showLocationInfo()">Location</a>
+            <a href="#" onclick="showGeolocationInfo()">Geolocation</a>
+        </div>
+    </div>
+</div>
+<div class="welcome-container">
+    <h1 class="welcome-message">Internet and Web Technology</h1>
+    <!-- Course Syllabus and Resources -->
+    <div class="course-info">
+        <h2 class="course-title">Course Syllabus and Resources</h2>
+        <ul class="resources">
+            <li><a href="https://csci355wintersyllabus.tiiny.site" target="_blank">Syllabus</a></li>
+            <li><a href="resource1.pdf" target="_blank">Resource 1</a></li>
+            <li><a href="resource2.pdf" target="_blank">Resource 2</a></li>
+            <li><a href="additional-materials.html" target="_blank">Additional Materials</a></li>
+            <!-- Add more resources as needed -->
+        </ul>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
