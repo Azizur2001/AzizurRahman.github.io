@@ -1,7 +1,8 @@
 /* Base styles for the entire document */
 body {
     background-image: linear-gradient(to left,#42275a, #734b6d);
-    font-family: 'Segoe UI', STHeiti, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    font-family: 'Arial', 'Sana';
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -79,7 +80,7 @@ nav#mainMenu li:hover .submenu {
 /* Section Styles */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 0 15px;
     height: 100vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
@@ -112,7 +113,7 @@ img {
 /* Form Styles */
 form {
     max-width: 400px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 form label, form input, form textarea, form button {
@@ -143,10 +144,10 @@ form button:hover {
 /* Additional CSS for the Go Back Button */
 /* Additional CSS for the Go Back Button */
 .back-button {
-    display: block; /* Change to block to allow margin auto to work */
+    display: block; /* Block display to fill the width of its container */
     width: fit-content; /* Set the width to fit the content */
     padding: 10px 20px;
-    margin: 20px auto; /* Auto margins for horizontal centering */
+    margin: 80px auto; /* Top and bottom margin of 20px, auto margin on left and right for horizontal centering */
     background-color: #3498db; /* Button color */
     color: white; /* Text color */
     text-decoration: none; /* No underline */
@@ -157,9 +158,43 @@ form button:hover {
     text-align: center; /* Ensure text is centered if the block becomes wider */
 }
 
+.container-for-button {
+  text-align: center; /* This will center the .back-button horizontally */
+}
+
 .back-button:hover {
     background-color: #2980b9; /* Darker shade for hover effect */
-    color: #fff; /* Keep text color white on hover */
+    color: white; /* Keep text color white on hover */
     text-decoration: none; /* No underline on hover */
 }
+
+
+
+
+header h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+
 
