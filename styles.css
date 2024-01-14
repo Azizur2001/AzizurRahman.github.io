@@ -1,14 +1,12 @@
-/* Base styles for the entire document */
 body {
     background-image: linear-gradient(to left,#42275a, #734b6d);
-    background-color: #f4f4f9;
-    font-family: 'Arial', 'Sana';
+    font-family: 'Serif', 'Times New Roman', serif;
+    color: black;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-/* Header and Footer Styles */
 header, footer {
     background-color: #333;
     color: white;
@@ -173,10 +171,14 @@ form button:hover {
 
 header h1 {
     margin: 0;
+    font-family: 'Serif', 'Times New Roman', serif;
+
 }
 
 h2 {
-    color: #333;
+    font-family: 'Serif', 'Times New Roman', serif;
+    color: black;
+
 }
 
 p {
